@@ -15,6 +15,9 @@
   "dependencies": {
     "clear": "^0.1.0",
     "commander": "^6.0.0",
-    "figlet": "^1.5.0"
+    "figlet": "^1.5.0",
+    "find-remove": "^2.0.1",
+    "jsonfile": "^6.0.1",
+    "mysqldump": "^3.2.0"
   }
 }

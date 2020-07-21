@@ -2,29 +2,49 @@
 const clear = require('clear');
 const app = require('commander');
 const figlet = require('figlet');
-
-
+const jsonfile = require('jsonfile');
+const mysqldump = require('mysqldump');
+const findRemoveSync = require('find-remove');
 clear();
-figlet('Asmart GIT CLI', function(err, data) {
-    if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return;
-    }
-    console.log(data)
-});
+
+const fileConfig = `${process.cwd()}/asmart.json`;
+const  parseFileConfig = jsonfile.readFileSync(fileConfig);
+
+
 
 app
     .version('1.0.0')
-    .option('-d, --db [db]', 'Сделать только дамп базы данных')
+    .option('-d, --db', 'Сделать только дамп базы данных')
     .action(options => {
         // console.log(options.name, 'The name parsed');
 
         if (options.db){
-            console.log('db work');
-
-
+            findRemoveSync(process.cwd(), {prefix: 'dumppd'});
+            mysqldump({
+                connection: {
+                    host: parseFileConfig.host,
+                    user: parseFileConfig.user,
+                    password: parseFileConfig.password,
+                    database: parseFileConfig.database,
+                },
+                dumpToFile: `${process.cwd()}/dumppd_db${Date.now()}.sql.gz`,
+                compressFile: true,
+            });
+            console.log('success create dump database');
         }
+
+        if(options){
+
+            // figlet('Asmart GIT CLI', function(err, data) {
+            //     if (err) {
+            //         console.log('Something went wrong...');
+            //         console.dir(err);
+            //         return;
+            //     }
+            //     console.log(data)
+            // });
+        }
+
     });
 
 

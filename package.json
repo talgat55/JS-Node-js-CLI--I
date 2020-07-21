@@ -1,0 +1,20 @@
+{
+  "name": "asmartGitCLI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "agc": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "commander": "^6.0.0",
+    "figlet": "^1.5.0"
+  }
+}

@@ -22,10 +22,10 @@ app
             findRemoveSync(process.cwd(), {prefix: 'dumppd'});
             mysqldump({
                 connection: {
-                    host: parseFileConfig.host,
-                    user: parseFileConfig.user,
-                    password: parseFileConfig.password,
-                    database: parseFileConfig.database,
+                    host: parseFileConfig.db.host,
+                    user: parseFileConfig.db.user,
+                    password: parseFileConfig.db.password,
+                    database: parseFileConfig.db.database,
                 },
                 dumpToFile: `${process.cwd()}/dumppd_db${Date.now()}.sql.gz`,
                 compressFile: true,

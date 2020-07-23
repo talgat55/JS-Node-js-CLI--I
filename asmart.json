@@ -1,6 +1,8 @@
 {
-  "host": "localhost",
-  "user": "root",
-  "password": "password",
-  "database": "yii_todo"
+  "db": {
+    "host": "localhost",
+    "user": "root",
+    "password": "password",
+    "database": "yii_todo"
+  }
 }

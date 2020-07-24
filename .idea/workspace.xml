@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="673ddb9a-a76c-44a4-ba95-28e198a265c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asmart.json" beforeDir="false" afterPath="$PROJECT_DIR$/asmart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asmart.json.example" beforeDir="false" afterPath="$PROJECT_DIR$/asmart.json.example" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,7 @@
       <updated>1595351502973</updated>
       <workItem from="1595351504745" duration="6460000" />
       <workItem from="1595523878195" duration="8993000" />
-      <workItem from="1595561523184" duration="3367000" />
+      <workItem from="1595561523184" duration="3422000" />
     </task>
     <servers />
   </component>

@@ -4,5 +4,8 @@
     "user": "root",
     "password": "password",
     "database": "yii_todo"
+  },
+  "git": {
+    "remote_url": "git@github.com:talgat55/test.git"
   }
 }

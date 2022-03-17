@@ -21,6 +21,6 @@
     "fs-extra": "^9.0.1",
     "jsonfile": "^6.0.1",
     "mysqldump": "^3.2.0",
-    "simple-git": "^2.15.0"
+    "simple-git": "^3.3.0"
   }
 }
